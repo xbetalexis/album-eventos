@@ -9,6 +9,6 @@ const EVENTOS = {
 
     album: "https://photos.app.goo.gl/jWcrbgYo6iV4iAWt8",
 
-    fondo: "/fondos/sophia.jpg"
+    fondo: "/fondos/ChatGPT Image 10 ago 2026, 20_01_27.png"
   }
 };
