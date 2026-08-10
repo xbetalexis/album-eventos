@@ -1,0 +1,9 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/e/:evento",
+      "destination": "/index.html?evento=:evento"
+    }
+  ]
+}
