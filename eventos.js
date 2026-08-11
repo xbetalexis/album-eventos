@@ -2,7 +2,7 @@ const EVENTOS = {
   "valentina-xv": {
     tipo: "MIS XV",
     nombre: "Valentina",
-    fecha: "6 de noviembre de 2026",
+    fecha: "27 de febrero de 2027",
 
     mensaje:
       "Esta noche está llena de momentos únicos. Ayudame a guardar cada recuerdo compartiendo las fotos que captures durante mis XV ✨",
