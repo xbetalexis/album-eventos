@@ -178,13 +178,14 @@ h1 {
 .corazon {
   position: absolute;
 
-  /*
-    MÁS ABAJO Y MÁS A LA DERECHA
-    para alinearlo con la i manuscrita
-  */
-
   top: 0.13em;
   left: 67%;
+
+  /*
+     Lo desplazamos 4 mm
+     adicionales hacia la derecha
+  */
+  margin-left: 4mm;
 
   transform: translateX(-50%);
 
@@ -266,7 +267,7 @@ h1 {
 
 
 /* =========================
-   BOTÓN
+   BOTÓN PREMIUM
 ========================= */
 
 .btn {
@@ -321,9 +322,6 @@ h1 {
     box-shadow 0.25s ease;
 }
 
-
-/* BRILLO SUPERIOR DEL BOTÓN */
-
 .btn::before {
   content: "";
 
@@ -343,9 +341,6 @@ h1 {
       transparent
     );
 }
-
-
-/* HOVER */
 
 .btn:hover {
   transform: translateY(-3px);
@@ -371,16 +366,10 @@ h1 {
     scale(0.985);
 }
 
-
-/* ESTRELLA DEL BOTÓN */
-
 .btn-icon {
   font-size: 15px;
   opacity: 0.90;
 }
-
-
-/* FLECHA */
 
 .arrow {
   position: absolute;
@@ -459,14 +448,11 @@ h1 {
     line-height: 1.10;
   }
 
-  /*
-    MISMA POSICIÓN DEL CORAZÓN
-    EN CELULAR
-  */
-
   .corazon {
     top: 0.13em;
     left: 67%;
+
+    margin-left: 4mm;
 
     font-size: 0.31em;
   }
