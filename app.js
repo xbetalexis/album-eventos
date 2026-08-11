@@ -131,3 +131,60 @@ copiarAlias.addEventListener("click", async () => {
   }
 
 });
+
+
+/* =========================
+   ABRIR MERCADO PAGO
+========================= */
+
+const mercadoPago =
+  document.getElementById("mercadoPago");
+
+
+mercadoPago.addEventListener("click", () => {
+
+  const appUrl =
+    "mercadopago://";
+
+
+  const webUrl =
+    "https://www.mercadopago.com.ar/";
+
+
+  let cambioDePagina = false;
+
+
+  const detectarSalida = () => {
+
+    if (document.hidden) {
+
+      cambioDePagina = true;
+
+    }
+
+  };
+
+
+  document.addEventListener(
+    "visibilitychange",
+    detectarSalida,
+    { once: true }
+  );
+
+
+  window.location.href =
+    appUrl;
+
+
+  setTimeout(() => {
+
+    if (!cambioDePagina) {
+
+      window.location.href =
+        webUrl;
+
+    }
+
+  }, 1400);
+
+});
