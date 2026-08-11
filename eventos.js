@@ -9,6 +9,6 @@ const EVENTOS = {
 
     album: "https://photos.app.goo.gl/jWcrbgYo6iV4iAWt8",
 
-    fondo: "/fondos/valenxv.png"
+    fondo: "/fondos/valenfondoxv.png"
   }
 };
