@@ -22,54 +22,43 @@ body {
 ========================= */
 
 .hero {
-
   position: relative;
 
   min-height: 100vh;
 
   display: flex;
-
   align-items: center;
-
   justify-content: center;
 
   padding: 30px 20px;
 
   background-size: cover;
-
   background-position: center;
-
   background-repeat: no-repeat;
 
   overflow: hidden;
-
 }
 
 
 .overlay {
-
   position: absolute;
-
   inset: 0;
 
   background:
     linear-gradient(
       180deg,
-      rgba(0,0,0,.02),
-      rgba(0,0,0,.10)
+      rgba(0, 0, 0, 0.02),
+      rgba(0, 0, 0, 0.10)
     );
-
 }
 
 
 /* =========================
-   TARJETA
+   TARJETA TRANSPARENTE
 ========================= */
 
 .card {
-
   position: relative;
-
   z-index: 2;
 
   width: min(92vw, 520px);
@@ -81,23 +70,21 @@ body {
   background:
     linear-gradient(
       145deg,
-      rgba(15,8,18,.20),
-      rgba(5,3,8,.30)
+      rgba(15, 8, 18, 0.20),
+      rgba(5, 3, 8, 0.30)
     );
 
   border:
-    1px solid rgba(255,255,255,.22);
+    1px solid rgba(255, 255, 255, 0.22);
 
   border-radius: 30px;
 
   backdrop-filter: blur(4px);
-
   -webkit-backdrop-filter: blur(4px);
 
   box-shadow:
-    inset 0 1px 0 rgba(255,255,255,.12),
-    0 30px 70px rgba(0,0,0,.28);
-
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    0 30px 70px rgba(0, 0, 0, 0.28);
 }
 
 
@@ -106,57 +93,44 @@ body {
 ========================= */
 
 .top-decoration {
-
   display: flex;
-
   align-items: center;
-
   justify-content: center;
 
   gap: 14px;
 
   margin-bottom: 4px;
-
 }
 
 
 .top-decoration p {
-
   margin: 0;
 
   font-size: 12px;
-
   font-weight: 600;
 
   letter-spacing: 6px;
 
   color:
-    rgba(255,255,255,.90);
-
+    rgba(255, 255, 255, 0.90);
 }
 
 
 .top-decoration span {
-
   width: 28px;
-
   height: 1px;
 
   background:
     linear-gradient(
       90deg,
       transparent,
-      rgba(255,255,255,.65)
+      rgba(255, 255, 255, 0.65)
     );
-
 }
 
 
 .top-decoration span:last-child {
-
-  transform:
-    rotate(180deg);
-
+  transform: rotate(180deg);
 }
 
 
@@ -165,22 +139,17 @@ body {
 ========================= */
 
 .nombre-wrap {
-
   position: relative;
 
   display: flex;
-
   align-items: center;
-
   justify-content: center;
 
   margin-top: 2px;
-
 }
 
 
 h1 {
-
   position: relative;
 
   display: inline-block;
@@ -192,7 +161,7 @@ h1 {
     cursive;
 
   font-size:
-    clamp(72px,10vw,105px);
+    clamp(72px, 10vw, 105px);
 
   font-weight: 400;
 
@@ -200,35 +169,30 @@ h1 {
 
   letter-spacing: 1px;
 
-  color: white;
+  color: #ffffff;
 
   text-shadow:
-    0 0 5px rgba(255,255,255,.25),
-    0 0 18px rgba(205,160,255,.25),
-    0 5px 25px rgba(0,0,0,.45);
-
+    0 0 5px rgba(255, 255, 255, 0.25),
+    0 0 18px rgba(205, 160, 255, 0.25),
+    0 5px 25px rgba(0, 0, 0, 0.45);
 }
 
 
 /* =========================
-   CORAZÓN
+   CORAZÓN SOBRE LA i
 ========================= */
 
 .i-corazon {
-
   position: relative;
 
   display: inline-block;
-
 }
 
 
 .corazon {
-
   position: absolute;
 
-  top: .13em;
-
+  top: 0.13em;
   left: 67%;
 
   margin-left: 2mm;
@@ -240,19 +204,20 @@ h1 {
     Arial,
     sans-serif;
 
-  font-size: .31em;
+  font-size: 0.31em;
+
+  font-weight: normal;
 
   line-height: 1;
 
-  color: white;
+  color: #ffffff;
 
   pointer-events: none;
 
   text-shadow:
-    0 0 4px rgba(255,255,255,1),
-    0 0 9px rgba(255,255,255,.70),
-    0 0 15px rgba(210,165,255,.60);
-
+    0 0 4px rgba(255, 255, 255, 1),
+    0 0 9px rgba(255, 255, 255, 0.70),
+    0 0 15px rgba(210, 165, 255, 0.60);
 }
 
 
@@ -261,34 +226,36 @@ h1 {
 ========================= */
 
 .fecha {
-
   margin: 3px 0 0;
 
   font-size: 14px;
 
   font-weight: 500;
 
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 
   color:
-    rgba(255,255,255,.90);
+    rgba(255, 255, 255, 0.90);
 
+  text-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.35);
 }
 
 
 /* =========================
-   DECORACIÓN
+   ESTRELLA
 ========================= */
 
 .diamond {
-
   margin: 18px 0;
 
   font-size: 13px;
 
   color:
-    rgba(255,255,255,.78);
+    rgba(255, 255, 255, 0.78);
 
+  text-shadow:
+    0 0 8px rgba(255, 255, 255, 0.5);
 }
 
 
@@ -297,7 +264,6 @@ h1 {
 ========================= */
 
 .mensaje {
-
   max-width: 410px;
 
   margin:
@@ -307,31 +273,28 @@ h1 {
 
   line-height: 1.7;
 
+  font-weight: 400;
+
   color:
-    rgba(255,255,255,.94);
+    rgba(255, 255, 255, 0.94);
 
   text-shadow:
-    0 2px 8px rgba(0,0,0,.45);
-
+    0 2px 8px rgba(0, 0, 0, 0.45);
 }
 
 
 /* =========================
-   BOTONES
+   BOTÓN
 ========================= */
 
 .btn {
-
   position: relative;
 
   width: 100%;
-
   min-height: 62px;
 
   display: flex;
-
   align-items: center;
-
   justify-content: center;
 
   gap: 12px;
@@ -343,17 +306,17 @@ h1 {
 
   text-decoration: none;
 
-  color: white;
+  color: #ffffff;
 
   background:
     linear-gradient(
       135deg,
-      rgba(255,255,255,.18),
-      rgba(255,255,255,.06)
+      rgba(255, 255, 255, 0.18),
+      rgba(255, 255, 255, 0.06)
     );
 
   border:
-    1px solid rgba(255,255,255,.32);
+    1px solid rgba(255, 255, 255, 0.32);
 
   border-radius: 18px;
 
@@ -363,266 +326,99 @@ h1 {
   -webkit-backdrop-filter:
     blur(14px);
 
-  font-family:
-    "DM Sans",
-    sans-serif;
-
   font-size: 13px;
 
   font-weight: 600;
 
   letter-spacing: 1.7px;
 
-  cursor: pointer;
-
   box-shadow:
-    inset 0 1px 0 rgba(255,255,255,.28),
-    0 12px 35px rgba(0,0,0,.25);
+    inset 0 1px 0 rgba(255, 255, 255, 0.28),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.04),
+    0 12px 35px rgba(0, 0, 0, 0.25);
 
   transition:
-    .25s ease;
+    transform 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
 
+
+.btn::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 10%;
+
+  width: 80%;
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.75),
+      transparent
+    );
 }
 
 
 .btn:hover {
-
   transform:
     translateY(-3px);
 
   background:
     linear-gradient(
       135deg,
-      rgba(255,255,255,.26),
-      rgba(255,255,255,.11)
+      rgba(255, 255, 255, 0.26),
+      rgba(255, 255, 255, 0.11)
     );
 
+  border-color:
+    rgba(255, 255, 255, 0.50);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.38),
+    0 18px 45px rgba(0, 0, 0, 0.32);
 }
 
 
 .btn:active {
-
   transform:
-    scale(.985);
-
+    translateY(0)
+    scale(0.985);
 }
 
 
 .btn-icon {
-
   font-size: 15px;
 
+  opacity: 0.90;
 }
 
 
 .arrow {
-
   position: absolute;
 
   right: 22px;
 
   font-size: 20px;
 
-  opacity: .75;
+  font-weight: 400;
 
+  opacity: 0.75;
+
+  transition:
+    transform 0.25s ease;
 }
 
 
-/* =========================
-   REGALO
-========================= */
-
-.regalo {
-
-  margin-top: 34px;
-
-  padding-top: 30px;
-
-  border-top:
-    1px solid rgba(255,255,255,.16);
-
-}
-
-
-.regalo-icon {
-
-  width: 42px;
-
-  height: 42px;
-
-  margin:
-    0 auto 12px;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  border:
-    1px solid rgba(255,255,255,.30);
-
-  border-radius: 50%;
-
-  background:
-    rgba(255,255,255,.08);
-
-  font-size: 22px;
-
-}
-
-
-.regalo-titulo {
-
-  margin:
-    0 0 8px;
-
-  font-size: 18px;
-
-  font-weight: 600;
-
-}
-
-
-.regalo-texto {
-
-  margin:
-    0 auto 20px;
-
-  max-width: 390px;
-
-  font-size: 13px;
-
-  line-height: 1.6;
-
-  color:
-    rgba(255,255,255,.75);
-
-}
-
-
-/* =========================
-   ALIAS
-========================= */
-
-.alias-box {
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: space-between;
-
-  gap: 15px;
-
-  margin-bottom: 12px;
-
-  padding:
-    13px 14px;
-
-  text-align: left;
-
-  border:
-    1px solid rgba(255,255,255,.22);
-
-  border-radius: 15px;
-
-  background:
-    rgba(255,255,255,.07);
-
-}
-
-
-.alias-label {
-
-  display: block;
-
-  margin-bottom: 2px;
-
-  font-size: 9px;
-
-  font-weight: 600;
-
-  letter-spacing: 2px;
-
-  color:
-    rgba(255,255,255,.55);
-
-}
-
-
-.alias-box strong {
-
-  font-size: 17px;
-
-  font-weight: 600;
-
-  letter-spacing: .5px;
-
-}
-
-
-.copiar {
-
-  padding:
-    9px 13px;
-
-  cursor: pointer;
-
-  color: white;
-
-  background:
-    rgba(255,255,255,.12);
-
-  border:
-    1px solid rgba(255,255,255,.25);
-
-  border-radius: 10px;
-
-  font-family:
-    "DM Sans",
-    sans-serif;
-
-  font-size: 10px;
-
-  font-weight: 600;
-
-  letter-spacing: 1px;
-
-}
-
-
-.copiar:hover {
-
-  background:
-    rgba(255,255,255,.20);
-
-}
-
-
-.copiado {
-
-  min-height: 17px;
-
-  margin:
-    0 0 8px;
-
-  font-size: 11px;
-
-  color:
-    rgba(255,255,255,.78);
-
-}
-
-
-/* =========================
-   MERCADO PAGO
-========================= */
-
-.mercado-btn {
-
-  margin-top: 5px;
-
+.btn:hover .arrow {
+  transform:
+    translateX(4px);
 }
 
 
@@ -631,15 +427,18 @@ h1 {
 ========================= */
 
 .nota {
-
   margin:
-    22px 0 0;
+    20px 0 0;
 
-  font-size: 11px;
+  font-size: 12px;
+
+  font-weight: 400;
 
   color:
-    rgba(255,255,255,.62);
+    rgba(255, 255, 255, 0.68);
 
+  text-shadow:
+    0 2px 7px rgba(0, 0, 0, 0.40);
 }
 
 
@@ -647,95 +446,101 @@ h1 {
    CELULAR
 ========================= */
 
-@media (max-width:600px) {
+@media (max-width: 600px) {
 
   .hero {
-
     padding: 18px;
 
+    background-position: center;
   }
 
 
   .card {
-
     width: 100%;
 
     padding:
-      36px 23px 30px;
+      36px
+      23px
+      30px;
 
     border-radius: 25px;
 
+    background:
+      linear-gradient(
+        145deg,
+        rgba(15, 8, 18, 0.18),
+        rgba(5, 3, 8, 0.28)
+      );
+  }
+
+
+  .top-decoration p {
+    font-size: 11px;
+
+    letter-spacing: 5px;
   }
 
 
   h1 {
-
     font-size: 72px;
 
+    line-height: 1.10;
   }
 
 
   .corazon {
-
-    top: .13em;
-
+    top: 0.13em;
     left: 67%;
 
     margin-left: 2mm;
 
-    font-size: .31em;
+    font-size: 0.31em;
+  }
 
+
+  .fecha {
+    font-size: 13px;
+  }
+
+
+  .diamond {
+    margin: 16px 0;
   }
 
 
   .mensaje {
-
     font-size: 14px;
 
+    line-height: 1.65;
+
+    margin-bottom: 26px;
   }
 
 
   .btn {
-
     min-height: 60px;
 
     padding:
-      15px 45px;
+      15px
+      45px;
 
-    font-size: 11px;
-
-    letter-spacing: 1.1px;
-
-  }
-
-
-  .regalo {
-
-    margin-top: 30px;
-
-    padding-top: 26px;
-
-  }
-
-
-  .regalo-titulo {
-
-    font-size: 17px;
-
-  }
-
-
-  .regalo-texto {
+    border-radius: 17px;
 
     font-size: 12px;
 
+    letter-spacing: 1.2px;
   }
 
 
-  .alias-box strong {
+  .arrow {
+    right: 18px;
+  }
 
-    font-size: 16px;
 
+  .nota {
+    margin-top: 18px;
+
+    font-size: 11px;
   }
 
 }
