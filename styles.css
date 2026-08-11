@@ -181,11 +181,8 @@ h1 {
   top: 0.13em;
   left: 67%;
 
-  /*
-     Lo desplazamos 4 mm
-     adicionales hacia la derecha
-  */
-  margin-left: 4mm;
+  /* 2 mm a la derecha */
+  margin-left: 2mm;
 
   transform: translateX(-50%);
 
@@ -452,7 +449,7 @@ h1 {
     top: 0.13em;
     left: 67%;
 
-    margin-left: 4mm;
+    margin-left: 2mm;
 
     font-size: 0.31em;
   }
