@@ -46,14 +46,14 @@ body {
   background:
     linear-gradient(
       180deg,
-      rgba(0, 0, 0, 0.03),
-      rgba(0, 0, 0, 0.12)
+      rgba(0, 0, 0, 0.02),
+      rgba(0, 0, 0, 0.10)
     );
 }
 
 
 /* =========================
-   TARJETA
+   TARJETA TRANSPARENTE
 ========================= */
 
 .card {
@@ -69,16 +69,16 @@ body {
   background:
     linear-gradient(
       145deg,
-      rgba(15, 8, 18, 0.22),
-      rgba(5, 3, 8, 0.34)
+      rgba(15, 8, 18, 0.20),
+      rgba(5, 3, 8, 0.30)
     );
 
   border: 1px solid rgba(255, 255, 255, 0.22);
 
   border-radius: 30px;
 
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.12),
@@ -97,7 +97,7 @@ body {
 
   gap: 14px;
 
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 }
 
 .top-decoration p {
@@ -108,7 +108,7 @@ body {
 
   letter-spacing: 6px;
 
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.90);
 }
 
 .top-decoration span {
@@ -119,7 +119,7 @@ body {
     linear-gradient(
       90deg,
       transparent,
-      rgba(255,255,255,.65)
+      rgba(255, 255, 255, 0.65)
     );
 }
 
@@ -129,16 +129,17 @@ body {
 
 
 /* =========================
-   VALENTINA
+   NOMBRE
 ========================= */
 
 .nombre-wrap {
   position: relative;
 
   display: flex;
+  align-items: center;
   justify-content: center;
 
-  margin: 4px 0 0;
+  margin-top: 2px;
 }
 
 h1 {
@@ -161,9 +162,41 @@ h1 {
   color: #ffffff;
 
   text-shadow:
-    0 0 6px rgba(255,255,255,.25),
-    0 0 18px rgba(218,170,255,.30),
-    0 5px 25px rgba(0,0,0,.45);
+    0 0 5px rgba(255, 255, 255, 0.25),
+    0 0 18px rgba(205, 160, 255, 0.25),
+    0 5px 25px rgba(0, 0, 0, 0.45);
+}
+
+
+/* =========================
+   CORAZÓN SOBRE LA i
+========================= */
+
+.i-corazon {
+  position: relative;
+
+  display: inline-block;
+}
+
+.corazon {
+  position: absolute;
+
+  top: -0.03em;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  font-family: Arial, sans-serif;
+
+  font-size: 0.17em;
+
+  line-height: 1;
+
+  color: #ffffff;
+
+  text-shadow:
+    0 0 5px rgba(255, 255, 255, 0.9),
+    0 0 12px rgba(210, 165, 255, 0.7);
 }
 
 
@@ -172,24 +205,34 @@ h1 {
 ========================= */
 
 .fecha {
-  margin: 4px 0 0;
+  margin: 3px 0 0;
 
   font-size: 14px;
 
   font-weight: 500;
 
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 
-  color: rgba(255,255,255,.90);
+  color: rgba(255, 255, 255, 0.90);
+
+  text-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.35);
 }
 
+
+/* =========================
+   ESTRELLA
+========================= */
 
 .diamond {
   margin: 18px 0;
 
   font-size: 13px;
 
-  color: rgba(255,255,255,.75);
+  color: rgba(255, 255, 255, 0.78);
+
+  text-shadow:
+    0 0 8px rgba(255, 255, 255, 0.5);
 }
 
 
@@ -208,15 +251,15 @@ h1 {
 
   font-weight: 400;
 
-  color: rgba(255,255,255,.94);
+  color: rgba(255, 255, 255, 0.94);
 
   text-shadow:
-    0 2px 8px rgba(0,0,0,.35);
+    0 2px 8px rgba(0, 0, 0, 0.45);
 }
 
 
 /* =========================
-   BOTÓN
+   BOTÓN PREMIUM
 ========================= */
 
 .btn {
@@ -237,16 +280,16 @@ h1 {
 
   text-decoration: none;
 
-  color: white;
+  color: #ffffff;
 
   background:
     linear-gradient(
       135deg,
-      rgba(255,255,255,.18),
-      rgba(255,255,255,.07)
+      rgba(255, 255, 255, 0.18),
+      rgba(255, 255, 255, 0.06)
     );
 
-  border: 1px solid rgba(255,255,255,.30);
+  border: 1px solid rgba(255, 255, 255, 0.32);
 
   border-radius: 18px;
 
@@ -260,11 +303,19 @@ h1 {
   letter-spacing: 1.7px;
 
   box-shadow:
-    inset 0 1px 0 rgba(255,255,255,.25),
-    0 12px 35px rgba(0,0,0,.22);
+    inset 0 1px 0 rgba(255, 255, 255, 0.28),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.04),
+    0 12px 35px rgba(0, 0, 0, 0.25);
 
-  transition: all .25s ease;
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
 }
+
+
+/* brillo del botón */
 
 .btn::before {
   content: "";
@@ -281,10 +332,13 @@ h1 {
     linear-gradient(
       90deg,
       transparent,
-      rgba(255,255,255,.65),
+      rgba(255, 255, 255, 0.75),
       transparent
     );
 }
+
+
+/* hover */
 
 .btn:hover {
   transform: translateY(-3px);
@@ -292,24 +346,38 @@ h1 {
   background:
     linear-gradient(
       135deg,
-      rgba(255,255,255,.26),
-      rgba(255,255,255,.11)
+      rgba(255, 255, 255, 0.26),
+      rgba(255, 255, 255, 0.11)
     );
 
-  border-color: rgba(255,255,255,.48);
+  border-color:
+    rgba(255, 255, 255, 0.50);
 
   box-shadow:
-    inset 0 1px 0 rgba(255,255,255,.35),
-    0 18px 45px rgba(0,0,0,.30);
+    inset 0 1px 0 rgba(255, 255, 255, 0.38),
+    0 18px 45px rgba(0, 0, 0, 0.32);
 }
 
+
+/* cuando se presiona */
+
 .btn:active {
-  transform: scale(.985);
+  transform:
+    translateY(0)
+    scale(0.985);
 }
+
+
+/* estrella izquierda */
 
 .btn-icon {
   font-size: 15px;
+
+  opacity: 0.90;
 }
+
+
+/* flecha */
 
 .arrow {
   position: absolute;
@@ -318,9 +386,12 @@ h1 {
 
   font-size: 20px;
 
-  opacity: .75;
+  font-weight: 400;
 
-  transition: transform .25s ease;
+  opacity: 0.75;
+
+  transition:
+    transform 0.25s ease;
 }
 
 .btn:hover .arrow {
@@ -337,7 +408,12 @@ h1 {
 
   font-size: 12px;
 
-  color: rgba(255,255,255,.68);
+  font-weight: 400;
+
+  color: rgba(255, 255, 255, 0.68);
+
+  text-shadow:
+    0 2px 7px rgba(0, 0, 0, 0.40);
 }
 
 
@@ -349,34 +425,62 @@ h1 {
 
   .hero {
     padding: 18px;
+
+    background-position: center;
   }
 
   .card {
     width: 100%;
 
-    padding: 36px 23px 30px;
+    padding:
+      36px
+      23px
+      30px;
 
     border-radius: 25px;
+
+    background:
+      linear-gradient(
+        145deg,
+        rgba(15, 8, 18, 0.18),
+        rgba(5, 3, 8, 0.28)
+      );
+  }
+
+  .top-decoration p {
+    font-size: 11px;
+
+    letter-spacing: 5px;
   }
 
   h1 {
     font-size: 72px;
 
-    line-height: 1.1;
+    line-height: 1.10;
   }
 
   .fecha {
     font-size: 13px;
   }
 
+  .diamond {
+    margin: 16px 0;
+  }
+
   .mensaje {
     font-size: 14px;
+
+    line-height: 1.65;
+
+    margin-bottom: 26px;
   }
 
   .btn {
     min-height: 60px;
 
-    padding: 15px 45px;
+    padding:
+      15px
+      45px;
 
     border-radius: 17px;
 
@@ -388,4 +492,11 @@ h1 {
   .arrow {
     right: 18px;
   }
+
+  .nota {
+    margin-top: 18px;
+
+    font-size: 11px;
+  }
+
 }
