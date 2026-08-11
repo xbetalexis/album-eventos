@@ -1,14 +1,25 @@
 const EVENTOS = {
+
   "valentina-xv": {
+
     tipo: "MIS XV",
+
     nombre: "Valentina",
-    fecha: "27 de febrero de 2027",
+
+    fecha: "6 de noviembre de 2026",
 
     mensaje:
       "Esta noche está llena de momentos únicos. Ayudame a guardar cada recuerdo compartiendo las fotos que captures durante mis XV ✨",
 
-    album: "https://photos.app.goo.gl/jWcrbgYo6iV4iAWt8",
+    album:
+      "https://photos.app.goo.gl/jWcrbgYo6iV4iAWt8",
 
-    fondo: "/fondos/valenfondoxv.png"
+    fondo:
+      "/fondos/valenxv.png",
+
+    alias:
+      "tamy.f"
+
   }
+
 };
