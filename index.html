@@ -2,6 +2,7 @@
 <html lang="es">
 
 <head>
+
   <meta charset="utf-8">
 
   <meta
@@ -12,7 +13,10 @@
   <title>Mis XV - Valentina</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
 
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Great+Vibes&display=swap"
@@ -20,58 +24,165 @@
   >
 
   <link rel="stylesheet" href="/styles.css">
+
 </head>
 
 <body>
 
-  <main class="hero">
+<main class="hero">
 
-    <div class="overlay"></div>
+  <div class="overlay"></div>
 
-    <section class="card">
+  <section class="card">
 
-      <div class="top-decoration">
-        <span></span>
-        <p id="tipo">MIS XV</p>
-        <span></span>
+    <div class="top-decoration">
+
+      <span></span>
+
+      <p id="tipo">
+        MIS XV
+      </p>
+
+      <span></span>
+
+    </div>
+
+
+    <div class="nombre-wrap">
+
+      <h1 id="nombre"></h1>
+
+    </div>
+
+
+    <p
+      class="fecha"
+      id="fecha">
+    </p>
+
+
+    <div class="diamond">
+      ✦
+    </div>
+
+
+    <p
+      class="mensaje"
+      id="mensaje">
+    </p>
+
+
+    <!-- FOTOS -->
+
+    <a
+      id="subir"
+      class="btn"
+      href="#"
+      target="_blank"
+      rel="noopener"
+    >
+
+      <span class="btn-icon">
+        ✦
+      </span>
+
+      <span>
+        COMPARTIR MIS FOTOS
+      </span>
+
+      <span class="arrow">
+        →
+      </span>
+
+    </a>
+
+
+    <!-- REGALO -->
+
+    <div class="regalo">
+
+      <div class="regalo-icon">
+        ♡
       </div>
 
-      <div class="nombre-wrap">
-        <h1 id="nombre"></h1>
+      <p class="regalo-titulo">
+        ¿Querés hacerme un regalo?
+      </p>
+
+      <p class="regalo-texto">
+        Si querés regalarme algo para este momento tan especial,
+        podés hacerlo por Mercado Pago.
+      </p>
+
+
+      <div class="alias-box">
+
+        <div>
+
+          <span class="alias-label">
+            ALIAS
+          </span>
+
+          <strong id="alias">
+            tamy.f
+          </strong>
+
+        </div>
+
+
+        <button
+          id="copiarAlias"
+          class="copiar"
+          type="button"
+        >
+          COPIAR
+        </button>
+
       </div>
 
-      <p class="fecha" id="fecha"></p>
 
-      <div class="diamond">✦</div>
+      <p
+        id="copiado"
+        class="copiado">
+      </p>
 
-      <p class="mensaje" id="mensaje"></p>
 
       <a
-        id="subir"
-        class="btn"
-        href="#"
+        class="btn mercado-btn"
+        href="https://www.mercadopago.com.ar/"
         target="_blank"
         rel="noopener"
       >
 
-        <span class="btn-icon">✦</span>
+        <span class="btn-icon">
+          ♡
+        </span>
 
-        <span>COMPARTIR MIS FOTOS</span>
+        <span>
+          ABRIR MERCADO PAGO
+        </span>
 
-        <span class="arrow">→</span>
+        <span class="arrow">
+          →
+        </span>
 
       </a>
 
-      <p class="nota">
-        Compartí tus mejores momentos de esta noche
-      </p>
+    </div>
 
-    </section>
 
-  </main>
+    <p class="nota">
+      Compartí tus mejores momentos de esta noche
+    </p>
 
-  <script src="/eventos.js"></script>
-  <script src="/app.js"></script>
+  </section>
+
+</main>
+
+
+<script src="/eventos.js"></script>
+<script src="/app.js"></script>
 
 </body>
+
 </html>
