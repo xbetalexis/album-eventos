@@ -9,6 +9,7 @@ const EVENTOS = {
 
     album: "https://photos.app.goo.gl/jWcrbgYo6iV4iAWt8",
 
-    fondo: "Diseño sin título - 2026-08-11T135357.684.png"
+    fondo: "valenxv.png
+"
   }
 };
