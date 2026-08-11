@@ -5,14 +5,20 @@
 html,
 body {
   margin: 0;
+  padding: 0;
+  width: 100%;
   min-height: 100%;
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "DM Sans", sans-serif;
+  background: #050305;
   color: white;
-  background: #080508;
 }
+
+/* =========================
+   FONDO
+========================= */
 
 .hero {
   position: relative;
@@ -28,90 +34,153 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  overflow: hidden;
 }
 
-/* oscurece muy poquito el fondo */
+/* Muy suave para no tapar el diseño */
+
 .overlay {
   position: absolute;
   inset: 0;
 
   background:
     linear-gradient(
-      rgba(0, 0, 0, 0.08),
-      rgba(0, 0, 0, 0.18)
+      180deg,
+      rgba(0, 0, 0, 0.03),
+      rgba(0, 0, 0, 0.12)
     );
 }
 
-/* recuadro transparente */
+/* =========================
+   TARJETA GLASS
+========================= */
+
 .card {
   position: relative;
   z-index: 2;
 
-  width: min(92%, 520px);
+  width: min(92vw, 520px);
+
+  padding: 45px 38px 35px;
 
   text-align: center;
 
-  padding: 44px 38px;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(15, 8, 18, 0.26),
+      rgba(5, 3, 8, 0.38)
+    );
 
-  border-radius: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
 
-  background: rgba(15, 8, 15, 0.32);
+  border-radius: 30px;
 
-  border: 1px solid rgba(255, 255, 255, 0.28);
-
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 
   box-shadow:
-    0 20px 50px rgba(0, 0, 0, 0.18);
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    0 30px 70px rgba(0, 0, 0, 0.28);
 }
 
-.eyebrow {
-  margin: 0 0 10px;
+/* =========================
+   MIS XV
+========================= */
 
-  font-size: 13px;
+.top-decoration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 14px;
+
+  margin-bottom: 14px;
+}
+
+.top-decoration p {
+  margin: 0;
+
+  font-size: 12px;
   font-weight: 600;
 
   letter-spacing: 6px;
 
-  opacity: 0.9;
+  color: rgba(255, 255, 255, 0.9);
 }
+
+.top-decoration span {
+  width: 28px;
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(255,255,255,.65)
+    );
+}
+
+.top-decoration span:last-child {
+  transform: rotate(180deg);
+}
+
+/* =========================
+   NOMBRE
+========================= */
 
 h1 {
   margin: 0;
 
   font-family: "Playfair Display", serif;
 
-  font-size: clamp(54px, 9vw, 82px);
+  font-size: clamp(55px, 8vw, 78px);
 
   font-weight: 500;
 
   line-height: 1;
 
   letter-spacing: -2px;
+
+  text-shadow:
+    0 5px 25px rgba(0,0,0,.30);
 }
 
-.fecha {
-  margin-top: 18px;
-  margin-bottom: 0;
+/* =========================
+   FECHA
+========================= */
 
-  font-size: 15px;
+.fecha {
+  margin: 20px 0 0;
+
+  font-size: 14px;
 
   font-weight: 500;
 
-  opacity: 0.95;
+  letter-spacing: 0.5px;
+
+  color: rgba(255,255,255,.90);
 }
 
-.divider {
+/* =========================
+   DECORACIÓN
+========================= */
+
+.diamond {
   margin: 18px 0;
 
-  font-size: 16px;
+  font-size: 13px;
 
-  opacity: 0.75;
+  color: rgba(255,255,255,.75);
 }
 
+/* =========================
+   MENSAJE
+========================= */
+
 .mensaje {
-  max-width: 420px;
+  max-width: 410px;
 
   margin: 0 auto 30px;
 
@@ -120,19 +189,34 @@ h1 {
   line-height: 1.7;
 
   font-weight: 400;
+
+  color: rgba(255,255,255,.94);
+
+  text-shadow:
+    0 2px 8px rgba(0,0,0,.35);
 }
 
-/* botón moderno */
+/* =========================
+   BOTÓN PREMIUM
+========================= */
+
 .btn {
+  position: relative;
+
   width: 100%;
 
+  min-height: 62px;
+
   display: flex;
+
   align-items: center;
   justify-content: center;
 
-  gap: 10px;
+  gap: 12px;
 
-  padding: 17px 24px;
+  padding: 16px 60px;
+
+  overflow: hidden;
 
   text-decoration: none;
 
@@ -141,66 +225,192 @@ h1 {
   background:
     linear-gradient(
       135deg,
-      #a82d70,
-      #d4478e
+      rgba(255,255,255,.18),
+      rgba(255,255,255,.07)
     );
 
-  border-radius: 16px;
+  border:
+    1px solid rgba(255,255,255,.30);
 
-  font-size: 14px;
+  border-radius: 18px;
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  font-size: 13px;
 
   font-weight: 600;
 
-  letter-spacing: 1.5px;
+  letter-spacing: 1.7px;
 
   box-shadow:
-    0 10px 28px rgba(168, 45, 112, 0.28);
+    inset 0 1px 0 rgba(255,255,255,.25),
+    inset 0 -1px 0 rgba(255,255,255,.05),
+    0 12px 35px rgba(0,0,0,.22);
 
   transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
+    transform .25s ease,
+    background .25s ease,
+    border-color .25s ease,
+    box-shadow .25s ease;
 }
+
+/* brillo superior */
+
+.btn::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 10%;
+
+  width: 80%;
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(255,255,255,.65),
+      transparent
+    );
+}
+
+/* Hover */
 
 .btn:hover {
-  transform: translateY(-2px);
+  transform:
+    translateY(-3px);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,255,255,.25),
+      rgba(255,255,255,.11)
+    );
+
+  border-color:
+    rgba(255,255,255,.45);
 
   box-shadow:
-    0 14px 34px rgba(168, 45, 112, 0.38);
+    inset 0 1px 0 rgba(255,255,255,.32),
+    0 18px 45px rgba(0,0,0,.30);
 }
 
-.icon {
-  font-size: 19px;
+/* Al tocar */
+
+.btn:active {
+  transform:
+    translateY(0)
+    scale(.985);
 }
+
+/* estrella */
+
+.btn-icon {
+  font-size: 15px;
+
+  opacity: .9;
+}
+
+/* flecha derecha */
+
+.arrow {
+  position: absolute;
+
+  right: 22px;
+
+  font-size: 20px;
+
+  font-weight: 400;
+
+  opacity: .75;
+
+  transition:
+    transform .25s ease;
+}
+
+.btn:hover .arrow {
+  transform:
+    translateX(4px);
+}
+
+/* =========================
+   TEXTO INFERIOR
+========================= */
 
 .nota {
-  margin-top: 18px;
-  margin-bottom: 0;
+  margin: 20px 0 0;
 
   font-size: 12px;
 
-  opacity: 0.72;
+  font-weight: 400;
+
+  color:
+    rgba(255,255,255,.68);
 }
+
+/* =========================
+   CELULAR
+========================= */
 
 @media (max-width: 600px) {
 
   .hero {
-    padding: 20px;
+    padding: 18px;
   }
 
   .card {
-    padding: 36px 24px;
+    width: 100%;
 
-    border-radius: 24px;
+    padding:
+      38px
+      23px
+      30px;
 
-    background: rgba(15, 8, 15, 0.28);
+    border-radius: 25px;
+
+    background:
+      linear-gradient(
+        145deg,
+        rgba(15,8,18,.22),
+        rgba(5,3,8,.32)
+      );
   }
 
   h1 {
-    font-size: 56px;
+    font-size: 54px;
+
+    letter-spacing: -1px;
+  }
+
+  .fecha {
+    font-size: 13px;
   }
 
   .mensaje {
     font-size: 14px;
+
+    line-height: 1.65;
+  }
+
+  .btn {
+    min-height: 60px;
+
+    padding:
+      15px
+      48px;
+
+    border-radius: 17px;
+
+    font-size: 12px;
+
+    letter-spacing: 1.3px;
+  }
+
+  .arrow {
+    right: 18px;
   }
 
 }
