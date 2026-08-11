@@ -21,7 +21,7 @@ const evento =
 
 
 /* =========================
-   DATOS
+   DATOS DEL EVENTO
 ========================= */
 
 document.getElementById("tipo").textContent =
@@ -38,10 +38,6 @@ document.getElementById("mensaje").textContent =
 
 document.getElementById("subir").href =
   evento.album;
-
-
-document.getElementById("alias").textContent =
-  evento.alias;
 
 
 /* =========================
@@ -87,104 +83,3 @@ if (posicionI !== -1) {
 
 document.querySelector(".hero").style.backgroundImage =
   `url("${evento.fondo}")`;
-
-
-/* =========================
-   COPIAR ALIAS
-========================= */
-
-const copiarAlias =
-  document.getElementById("copiarAlias");
-
-
-const copiado =
-  document.getElementById("copiado");
-
-
-copiarAlias.addEventListener("click", async () => {
-
-  try {
-
-    await navigator.clipboard.writeText(evento.alias);
-
-    copiado.textContent =
-      "✓ Alias copiado";
-
-    copiarAlias.textContent =
-      "COPIADO";
-
-    setTimeout(() => {
-
-      copiado.textContent =
-        "";
-
-      copiarAlias.textContent =
-        "COPIAR";
-
-    }, 2500);
-
-  } catch {
-
-    copiado.textContent =
-      `Alias: ${evento.alias}`;
-
-  }
-
-});
-
-
-/* =========================
-   ABRIR MERCADO PAGO
-========================= */
-
-const mercadoPago =
-  document.getElementById("mercadoPago");
-
-
-mercadoPago.addEventListener("click", () => {
-
-  const appUrl =
-    "mercadopago://";
-
-
-  const webUrl =
-    "https://www.mercadopago.com.ar/";
-
-
-  let cambioDePagina = false;
-
-
-  const detectarSalida = () => {
-
-    if (document.hidden) {
-
-      cambioDePagina = true;
-
-    }
-
-  };
-
-
-  document.addEventListener(
-    "visibilitychange",
-    detectarSalida,
-    { once: true }
-  );
-
-
-  window.location.href =
-    appUrl;
-
-
-  setTimeout(() => {
-
-    if (!cambioDePagina) {
-
-      window.location.href =
-        webUrl;
-
-    }
-
-  }, 1400);
-
-});
