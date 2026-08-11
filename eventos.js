@@ -15,7 +15,7 @@ const EVENTOS = {
       "https://photos.app.goo.gl/jWcrbgYo6iV4iAWt8",
 
     fondo:
-      "/fondos/valenxv.png",
+      "/fondos/valenfondoxv.png",
 
     alias:
       "tamy.f"
