@@ -7,9 +7,8 @@ const EVENTOS = {
     mensaje:
       "Esta noche está llena de momentos únicos. Ayudame a guardar cada recuerdo compartiendo las fotos que captures durante mis XV ✨",
 
-    album: "https://photos.app.goo.gl/jWcrbgYo6iV4iAWt8",
+album: "https://photos.app.goo.gl/jWcrbgYo6iV4iAWt8",
 
-    fondo: "valenxv.png
-"
+fondo: "/fondos/valenxv.png"
   }
 };
