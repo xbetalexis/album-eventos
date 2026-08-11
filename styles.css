@@ -23,7 +23,6 @@ body {
 
 .hero {
   position: relative;
-
   min-height: 100vh;
 
   display: flex;
@@ -144,7 +143,6 @@ body {
 
 h1 {
   position: relative;
-
   display: inline-block;
 
   margin: 0;
@@ -169,7 +167,7 @@ h1 {
 
 
 /* =========================
-   CORAZÓN SOBRE LA i
+   i + CORAZÓN
 ========================= */
 
 .i-corazon {
@@ -180,22 +178,32 @@ h1 {
 .corazon {
   position: absolute;
 
-  top: 0.08em;
-  left: 50%;
+  /*
+    MÁS ABAJO Y MÁS A LA DERECHA
+    para alinearlo con la i manuscrita
+  */
+
+  top: 0.13em;
+  left: 67%;
 
   transform: translateX(-50%);
 
   font-family: Arial, sans-serif;
 
-  font-size: 0.25em;
+  font-size: 0.31em;
+
+  font-weight: normal;
 
   line-height: 1;
 
   color: #ffffff;
 
+  pointer-events: none;
+
   text-shadow:
-    0 0 5px rgba(255, 255, 255, 0.95),
-    0 0 12px rgba(210, 165, 255, 0.75);
+    0 0 4px rgba(255, 255, 255, 1),
+    0 0 9px rgba(255, 255, 255, 0.70),
+    0 0 15px rgba(210, 165, 255, 0.60);
 }
 
 
@@ -220,7 +228,7 @@ h1 {
 
 
 /* =========================
-   ESTRELLA
+   ESTRELLA CENTRAL
 ========================= */
 
 .diamond {
@@ -258,7 +266,7 @@ h1 {
 
 
 /* =========================
-   BOTÓN PREMIUM
+   BOTÓN
 ========================= */
 
 .btn {
@@ -314,7 +322,7 @@ h1 {
 }
 
 
-/* brillo superior del botón */
+/* BRILLO SUPERIOR DEL BOTÓN */
 
 .btn::before {
   content: "";
@@ -337,7 +345,7 @@ h1 {
 }
 
 
-/* movimiento al pasar mouse */
+/* HOVER */
 
 .btn:hover {
   transform: translateY(-3px);
@@ -357,9 +365,6 @@ h1 {
     0 18px 45px rgba(0, 0, 0, 0.32);
 }
 
-
-/* cuando se presiona */
-
 .btn:active {
   transform:
     translateY(0)
@@ -367,16 +372,15 @@ h1 {
 }
 
 
-/* estrella izquierda */
+/* ESTRELLA DEL BOTÓN */
 
 .btn-icon {
   font-size: 15px;
-
   opacity: 0.90;
 }
 
 
-/* flecha derecha */
+/* FLECHA */
 
 .arrow {
   position: absolute;
@@ -424,7 +428,6 @@ h1 {
 
   .hero {
     padding: 18px;
-
     background-position: center;
   }
 
@@ -448,19 +451,24 @@ h1 {
 
   .top-decoration p {
     font-size: 11px;
-
     letter-spacing: 5px;
   }
 
   h1 {
     font-size: 72px;
-
     line-height: 1.10;
   }
 
+  /*
+    MISMA POSICIÓN DEL CORAZÓN
+    EN CELULAR
+  */
+
   .corazon {
-    font-size: 0.25em;
-    top: 0.08em;
+    top: 0.13em;
+    left: 67%;
+
+    font-size: 0.31em;
   }
 
   .fecha {
@@ -499,8 +507,6 @@ h1 {
 
   .nota {
     margin-top: 18px;
-
     font-size: 11px;
   }
-
 }
