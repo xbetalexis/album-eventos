@@ -12,7 +12,7 @@ const EVENTOS = {
       "Esta noche está llena de momentos únicos. Ayudame a guardar cada recuerdo compartiendo las fotos que captures durante mis XV ✨",
 
     album:
-      "https://photos.app.goo.gl/jWcrbgYo6iV4iAWt8",
+      "https://photos.app.goo.gl/1FWyY9rfWyeji5Qh6",
 
     fondo:
       "/fondos/valenfondoxv.png"
